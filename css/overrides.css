@@ -6,6 +6,9 @@
     --bs-warning: #640000;
 
     --navbar-color: #130a0ade;
+
+    --link-dark-color: #423737;
+    --link-dark-color-hover: #665454;
 }
 
 .timeline > li .timeline-image {
@@ -16,14 +19,24 @@
     margin-bottom: 5rem;
 }
 
+.link-dark {
+    color: var(--link-dark-color);
+}
+
+.link-dark:hover {
+    color: var(--link-dark-color-hover);
+}
+
 .team-member img {
     width: 10rem;
     height: 10rem;
 }
 
-.zmr-cont-pic-color {
+header.masthead {
     background-image: url("/assets/bg001.jpg");
     background-size: cover;
+
+    min-height: 100vh;
 }
 
 .modal-content {
@@ -55,13 +68,6 @@ html {
     scroll-behavior: smooth;
 }
 
-header.masthead {
-    background-color: #1907078a;
-    background-image: none;
-
-    min-height: 100vh;
-}
-
 header.masthead .masthead-subheading {
     font-style: normal;
 }
@@ -80,13 +86,14 @@ header.masthead .masthead-subheading {
 
 #mainNav {
     background-color: var(--navbar-color);
+    transition-property: background-color, padding-top, padding-bottom;
 }
 
 /* Hide background at top if no hamburger menu */
 @media (min-width: 992px) {
     #mainNav {
         background: none;
-        transition: 0.2s;
+        transition-duration: 0.2s;
     }
 }
 
@@ -94,7 +101,7 @@ header.masthead .masthead-subheading {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: var(--navbar-color);
-    transition: 0.2s;
+    transition-duration: 0.2s;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
