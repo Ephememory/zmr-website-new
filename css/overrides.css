@@ -43,8 +43,7 @@
 .blog-content h2,
 .blog-content h3,
 .blog-content h4,
-.blog-content h5,
-.blog-content h6 {
+.blog-content h5 {
     margin-top: 3.5rem;
     text-align: center;
     text-transform: uppercase;
@@ -129,13 +128,6 @@ header.masthead .masthead-subheading {
     }
 }
 
-#mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: var(--navbar-color);
-    transition-duration: 0.2s;
-}
-
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: var(--bs-primary);
 }
@@ -152,22 +144,22 @@ header.masthead .masthead-subheading {
     border-color: #a10500;
 }
 
-.btn-check:focus + .btn-primary, .btn-primary:focus {
+ .btn-primary:focus {
     background-color: #c40700;
     border-color: #a10500;
     box-shadow: 0 0 0 0.25rem rgba(255, 38, 38, 0.5);
 }
 
-.btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+ .btn-primary:active, .btn-primary.active {
     background-color: #a10500;
     border-color: #a10500;
 }
 
-.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+ .btn-primary:active:focus, .btn-primary.active:focus {
 box-shadow: 0 0 0 0.25rem rgba(255, 38, 38, 0.5);
 }
 
-.btn-primary:disabled, .btn-primary.disabled {
+.btn-primary:disabled {
     background-color: #ff0800;
     border-color: #ff0800;
 }
