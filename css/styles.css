@@ -330,11 +330,6 @@ iframe {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
-
-  .col-lg-8 {
-    flex: 0 0 auto;
-    width: 66.66666667%;
-  }
 }
 
 .btn {
@@ -705,10 +700,6 @@ iframe {
 
 .d-block {
   display: block !important;
-}
-
-.justify-content-center {
-  justify-content: center !important;
 }
 
 .align-items-center {
