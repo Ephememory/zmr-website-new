@@ -11,10 +11,6 @@
     --link-dark-color-hover: #665454;
 }
 
-.timeline > li .timeline-image {
-    background-size: cover;
-}
-
 .blog-content {
     margin-bottom: 5rem;
 }
@@ -74,10 +70,6 @@ header.masthead {
     background-color: #000000CC;
 }
 
-.timeline > li .timeline-image {
-    background-color: black;
-}
-
 .text-muted {
     color: #c6afaf !important;
 }
@@ -126,6 +118,13 @@ header.masthead .masthead-subheading {
         background: none;
         transition-duration: 0.2s;
     }
+}
+
+#mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--navbar-color);
+    transition-duration: 0.2s;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
